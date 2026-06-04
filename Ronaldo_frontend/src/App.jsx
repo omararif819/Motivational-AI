@@ -32,7 +32,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8080/chat", {
+      const response = await fetch("https://motivational-ai.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ function App() {
 
   async function resetChat() {
     try {
-      await fetch("http://localhost:8080/reset", {
+      await fetch("https://motivational-ai.onrender.com/reset", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
